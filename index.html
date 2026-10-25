@@ -134,6 +134,7 @@
   @media(min-width:900px){.note-strip{margin:0 56px;}}
   .note-strip p{margin:0;font-size:15px;line-height:1.7;max-width:560px;margin:0 auto;}
   .note-strip .quote-mark{font-family:'Baloo 2',sans-serif;font-size:32px;line-height:1;display:block;margin-bottom:8px;}
+  .note-strip .sign{display:block;margin-top:10px;font-family:'Baloo 2',sans-serif;font-weight:700;}
 
   footer{padding-bottom:env(safe-area-inset-bottom,0px);}
   .foot-top{padding:56px 0 40px;display:flex;flex-direction:column;gap:36px;text-align:center;align-items:center;}
@@ -151,13 +152,13 @@
   .foot-bottom{padding:20px 0;font-size:11px;color:var(--ink-faint);text-align:center;}
   .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
 </style>
-<script type='text/javascript' nonce='4ShOsO2J+QquUOgaOorbjQ==' src='https://78ee2572-6188-4214-b98c-58a286379d90.frame.claudeusercontent.com/VeLRf9Zf_LiuKkEFtOYu7HVMWlGgFlF91iMeu94hKTw3YuyH77TDSPizZQnU8kPXo88Nca0ur8UUWrLLV-wliy_9x8B-SQXTqbAeXR6TazP8ofhwUoV3aLhM6_IQ8NHinOpuOAwrSYpGQ7EE7RgibblJuI87fc0ZnxC8MtscaIO99rnqg2m5aODmzT9XKn26HXJ6MPPpAxAhCGUAeRScZ2Z43fd_yf4CDB2AvC9AH2fo_AMGzomGlqdGzN6tYqZLUZW6RLzWWU0iEijenIUzc-ugsVhxW2nbViOHASf93h0NSGCTd4uoKyn4DvaYHpR_oba1oz6MQsN1OReVAi2KpVnSoyJ-ColqRpL330K4JSGCH7flyrY4XnoYbqRkFuTYY5Cv7hGmsKsjpV50HRxIiqeY5NTDlTUXGIQoUVjX--KNL0sDobvIS7FWgjcdTiQnQpbvqD2sCWt-agdqWQqhjJ4UBtnx-uPh937ITh_BRNUT5ggvPwOabue488v5dY2r6JmjckSxbcA4h9UjSQigPnonotbDB7uSP5pOWzz00SlYsAA49t0jM9RkEkUyadxPryigixHVrmg9wAguALgoWN1WuRIcVasAYzh4rM0f8gojBygsN031-mY7imFWWkeFcQTlKxe5rlSf2SyXQybMLNsONd7gWi4jYwxkHm6gOgVlVhrMbUNLWzHj2RUAtX2uyIMJfRQScTX8jTryAuTvmg'></script></head>
+</head>
 <body>
 
 <header class="site">
   <div class="wrap nav-row">
     <div class="logo">
-      <svg width="26" height="26" viewbox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="var(--pink)"/><circle cx="14" cy="16" r="4" fill="var(--yellow)"/><circle cx="26" cy="16" r="4" fill="var(--teal)"/><circle cx="20" cy="26" r="4" fill="var(--purple)"/></svg>
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="var(--pink)"/><circle cx="14" cy="16" r="4" fill="var(--yellow)"/><circle cx="26" cy="16" r="4" fill="var(--teal)"/><circle cx="20" cy="26" r="4" fill="var(--purple)"/></svg>
       Eloise
     </div>
     <nav class="links">
@@ -169,11 +170,11 @@
     </nav>
     <div class="icon-row">
       <button class="icon-btn" id="bag-btn" aria-label="Shopping bag">
-        <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.4a2 2 0 0 0 2-1.6L21 8H6"></path><circle cx="10" cy="21" r="1"></circle><circle cx="18" cy="21" r="1"></circle></svg>
-        <span class="badge" id="bag-count" hidden="">0</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.4a2 2 0 0 0 2-1.6L21 8H6"></path><circle cx="10" cy="21" r="1"></circle><circle cx="18" cy="21" r="1"></circle></svg>
+        <span class="badge" id="bag-count" hidden>0</span>
       </button>
       <button class="icon-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="21" height="21" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
       </button>
     </div>
   </div>
@@ -193,13 +194,13 @@
     <div class="hero-copy">
       <div class="eyebrow">Made bead by bead</div>
       <h1>Little beads,<br><span class="accent">big imagination.</span></h1>
-      <p class="lede">Hi, I'm Eloise! I hand-string every purse, glove, and bracelet myself — no two are ever exactly the same.</p>
+      <p class="lede">Hi, I'm Eloise! I string every purse, glove, and bracelet myself, so no two ever come out exactly the same.</p>
       <div class="cta-row">
         <a href="#shop" class="btn-solid">Shop My Beadwork</a>
         <a href="#about" class="btn-outline">Meet Me</a>
       </div>
     </div>
-    <svg class="hero-art" viewbox="0 0 320 320" fill="none">
+    <svg class="hero-art" viewBox="0 0 320 320" fill="none">
       <circle cx="160" cy="160" r="150" fill="var(--panel)"/>
       <path d="M100 150 a40 30 0 0 1 80 0 v70 a10 10 0 0 1 -10 10 h-60 a10 10 0 0 1 -10 -10 z" fill="var(--pink)"/>
       <path d="M112 150 q28 -34 56 0" stroke="var(--ink)" stroke-width="5" fill="none" stroke-linecap="round"/>
@@ -223,12 +224,12 @@
   <div class="wrap">
     <div class="section-head">
       <h2>Shop by kind</h2>
-      <p>Every piece below is hand-beaded — pick a category to see what's ready.</p>
+      <p>Everything here is beaded by hand. Pick one to see what's ready.</p>
     </div>
     <div class="cat-grid">
       <a class="cat-card" href="#">
         <div class="swatch" style="background:linear-gradient(135deg,var(--pink),var(--yellow));">
-          <svg width="64" height="64" viewbox="0 0 64 64" fill="none">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
             <path d="M14 30 a18 14 0 0 1 36 0 v18 a6 6 0 0 1 -6 6 h-24 a6 6 0 0 1 -6 -6 z" fill="#fff"/>
             <path d="M20 30 q12 -16 24 0" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linecap="round"/>
             <circle cx="24" cy="40" r="3" fill="var(--pink)"/><circle cx="32" cy="40" r="3" fill="var(--teal)"/><circle cx="40" cy="40" r="3" fill="var(--purple)"/>
@@ -239,7 +240,7 @@
       </a>
       <a class="cat-card" href="#">
         <div class="swatch" style="background:linear-gradient(135deg,var(--teal),var(--purple));">
-          <svg width="64" height="64" viewbox="0 0 64 64" fill="none">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
             <rect x="20" y="22" width="24" height="30" rx="12" fill="#fff"/>
             <ellipse cx="16" cy="30" rx="7" ry="10" fill="#fff"/>
             <rect x="20" y="44" width="24" height="8" rx="3" fill="var(--yellow)"/>
@@ -251,7 +252,7 @@
       </a>
       <a class="cat-card" href="#">
         <div class="swatch" style="background:linear-gradient(135deg,var(--purple),var(--pink));">
-          <svg width="64" height="64" viewbox="0 0 64 64" fill="none">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
             <circle cx="32" cy="32" r="16" stroke="#fff" stroke-width="4" fill="none"/>
             <circle cx="48" cy="32" r="5" fill="var(--yellow)"/>
             <circle cx="43" cy="45" r="5" fill="var(--teal)"/>
@@ -274,7 +275,7 @@
   <div class="wrap">
     <div class="about">
       <div class="about-inner">
-        <svg width="140" height="140" viewbox="0 0 140 140" fill="none" style="flex-shrink:0;">
+        <svg width="140" height="140" viewBox="0 0 140 140" fill="none" style="flex-shrink:0;">
           <circle cx="70" cy="70" r="70" fill="var(--pink)"/>
           <circle cx="70" cy="58" r="26" fill="#fff"/>
           <path d="M30 128 a40 34 0 0 1 80 0 z" fill="#fff"/>
@@ -285,8 +286,9 @@
         <div class="about-copy">
           <div class="eyebrow">Meet the maker</div>
           <h2>Hi, I'm Eloise!</h2>
-          <p>[Add a bit here about how Eloise started beading, what she loves making most, and a favorite color combo or pattern.]</p>
-          <p>Every order is strung, checked, and finished by hand before it heads your way.</p>
+          <p>I started beading because I couldn't find a bracelet in the exact colors I wanted, so I made one. Then I made one for my friend. Then I kind of couldn't stop.</p>
+          <p>Bracelets are the quickest, but purses are my favorite even though one can take me a whole weekend. Right now my favorite combo is pink and teal with one yellow bead in the middle. No reason, it just looks right.</p>
+          <p>I check every piece for loose beads before it goes out.</p>
         </div>
       </div>
     </div>
@@ -300,22 +302,22 @@
     </div>
     <div class="steps">
       <div class="step">
-        <svg width="56" height="56" viewbox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--panel)"/><circle cx="20" cy="22" r="6" fill="var(--pink)"/><circle cx="32" cy="18" r="6" fill="var(--yellow)"/><circle cx="24" cy="34" r="6" fill="var(--teal)"/><circle cx="36" cy="32" r="6" fill="var(--purple)"/></svg>
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--panel)"/><circle cx="20" cy="22" r="6" fill="var(--pink)"/><circle cx="32" cy="18" r="6" fill="var(--yellow)"/><circle cx="24" cy="34" r="6" fill="var(--teal)"/><circle cx="36" cy="32" r="6" fill="var(--purple)"/></svg>
         <div class="step-num">STEP 1</div>
         <h3>Pick the beads</h3>
-        <p>Every color and pattern starts with a big pile of beads to sort through.</p>
+        <p>I dump out a big pile and sort colors until something clicks.</p>
       </div>
       <div class="step">
-        <svg width="56" height="56" viewbox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--panel)"/><path d="M14 38 q14 -24 28 -20" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="18" cy="34" r="4" fill="var(--pink)"/><circle cx="26" cy="24" r="4" fill="var(--teal)"/><circle cx="36" cy="18" r="4" fill="var(--yellow)"/></svg>
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--panel)"/><path d="M14 38 q14 -24 28 -20" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="18" cy="34" r="4" fill="var(--pink)"/><circle cx="26" cy="24" r="4" fill="var(--teal)"/><circle cx="36" cy="18" r="4" fill="var(--yellow)"/></svg>
         <div class="step-num">STEP 2</div>
         <h3>String it by hand</h3>
-        <p>Each bead is threaded one at a time to build the pattern.</p>
+        <p>One bead at a time. Sometimes I start over if the pattern looks off.</p>
       </div>
       <div class="step">
-        <svg width="56" height="56" viewbox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--panel)"/><path d="M28 16 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="var(--pink)"/></svg>
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--panel)"/><path d="M28 16 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="var(--pink)"/></svg>
         <div class="step-num">STEP 3</div>
         <h3>Finish &amp; send</h3>
-        <p>A last check for loose beads, then it's wrapped up and ready to ship.</p>
+        <p>Tie it off, double-check it, wrap it up, and send it to you.</p>
       </div>
     </div>
   </div>
@@ -334,7 +336,8 @@
   <div class="wrap">
     <div class="note-strip">
       <span class="quote-mark">"</span>
-      <p>[Space for a customer's note about their favorite piece — swap this in once you have one.]</p>
+      <p>Want something in your favorite colors? Just ask! Some of my best pieces started as someone else's idea.</p>
+      <span class="sign">Eloise</span>
     </div>
   </div>
 </section>
@@ -343,16 +346,16 @@
   <div class="wrap foot-top">
     <div class="foot-brand">
       <div class="logo">
-        <svg width="24" height="24" viewbox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="var(--pink)"/><circle cx="14" cy="16" r="4" fill="var(--yellow)"/><circle cx="26" cy="16" r="4" fill="var(--teal)"/><circle cx="20" cy="26" r="4" fill="var(--purple)"/></svg>
+        <svg width="24" height="24" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="var(--pink)"/><circle cx="14" cy="16" r="4" fill="var(--yellow)"/><circle cx="26" cy="16" r="4" fill="var(--teal)"/><circle cx="20" cy="26" r="4" fill="var(--purple)"/></svg>
         Eloise
       </div>
-      <p>Handmade beaded purses, gloves &amp; bracelets — strung with care, one bead at a time.</p>
+      <p>Handmade beaded purses, gloves &amp; bracelets, strung one bead at a time.</p>
     </div>
     <div class="foot-sub">
       <div class="head">Want updates on new pieces?</div>
-      <form id="newsletter-form" class="sub-form">
+      <form id="newsletter-form" class="sub-form" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_BUTTONDOWN_USERNAME" method="post">
         <label for="newsletter-email" class="sr-only">Email address</label>
-        <input id="newsletter-email" type="email" placeholder="Email address" required="">
+        <input id="newsletter-email" name="email" type="email" placeholder="Email address" required>
         <button type="submit">Join</button>
       </form>
       <div class="sub-note" id="sub-note" aria-live="polite"></div>
@@ -378,10 +381,10 @@
   });
 
   var products = [
-    { name: 'Rainbow Stack Bracelet', price: '[$PRICE]', bg: 'linear-gradient(135deg,var(--pink),var(--yellow))' },
-    { name: 'Sunshine Mini Purse', price: '[$PRICE]', bg: 'linear-gradient(135deg,var(--yellow),var(--teal))' },
-    { name: 'Ocean Wave Gloves', price: '[$PRICE]', bg: 'linear-gradient(135deg,var(--teal),var(--purple))' },
-    { name: 'Berry Beaded Cuff', price: '[$PRICE]', bg: 'linear-gradient(135deg,var(--purple),var(--pink))' }
+    { name: 'Rainbow Stack Bracelet', price: '$8', bg: 'linear-gradient(135deg,var(--pink),var(--yellow))' },
+    { name: 'Sunshine Mini Purse', price: '$22', bg: 'linear-gradient(135deg,var(--yellow),var(--teal))' },
+    { name: 'Ocean Wave Gloves', price: '$18', bg: 'linear-gradient(135deg,var(--teal),var(--purple))' },
+    { name: 'Berry Beaded Cuff', price: '$10', bg: 'linear-gradient(135deg,var(--purple),var(--pink))' }
   ];
   var grid = document.getElementById('prod-grid');
   products.forEach(function(p){
@@ -413,15 +416,8 @@
       try { localStorage.setItem('eloise-bag-count', String(bagCount)); } catch (e) {}
     }
   });
-
-  var form = document.getElementById('newsletter-form');
-  var note = document.getElementById('sub-note');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    note.textContent = 'Thanks — you\'re on the list!';
-    form.reset();
-  });
 })();
 </script>
+<script src="newsletter.js"></script>
 </body>
 </html>
